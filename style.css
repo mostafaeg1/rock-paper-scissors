@@ -7,7 +7,7 @@ body{
 header{
     font-family:  sans-serif;
     text-align: center;
-    font-size: 180%;
+    font-size: 2rem;
     color: black;
 }
 .icons{
@@ -37,7 +37,7 @@ opacity: 0.9;
 background-color:hsl(0, 100%, 0%);
 outline: none;
 border:0.8px solid white;
-width: 7%;
+width: 120px;
 height: 50px;
 cursor: pointer;
 font-size: 20px;
@@ -85,5 +85,66 @@ font-size: 20px;
 #result{
     visibility: hidden;
     color: white;
-    font-size: 280%;
+    font-size: 2.5rem;
 }
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    font-size: 20px;
+  }
+  
+ #github{
+      width: 25px;
+      transition: transform 0.3s ease-in-out;  
+  }
+  
+  #github:hover {
+      transform: rotate(360deg) scale(1.2);
+    }
+
+
+@media (min-width:496px) and (max-width: 588px) {
+  
+    header{
+        font-size: 150%;;
+    }
+    #result{
+        font-size: 2.5rem;
+    }
+  }
+
+  @media (max-width: 494px) {
+  
+    header{
+        font-size: 105%;;
+    }
+    #result{
+        font-size: 180%;
+    }
+    #player-icon,#computer-icon{
+        width:100px;
+        height: 100px;
+    }
+    .icons{
+        width:90px;
+        height: 90px;
+        
+    }
+    #btn{
+        margin-top: 5%;
+        margin-bottom: 3%;
+        width: 110px;
+        height: 50px;
+        font-size: 18px;
+    }
+    #computer-section{
+        margin-left: 4%;
+    }
+    #player-section{
+        margin-right: 4%;
+    }
+  }
