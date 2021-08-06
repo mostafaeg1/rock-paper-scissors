@@ -1,57 +1,28 @@
-body{
-    background: #00c9ff; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to right, #00c9ff, #92fe9d); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to right, #00c9ff, #92fe9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  font-family: sans-serif;
-}
+
 header{
     font-family:  sans-serif;
     text-align: center;
     font-size: 2rem;
     color: black;
 }
-.icons{
-    display: inline-block;
-    width:120px;
-    height: 120px;
-    border-radius: 20px;
-    margin-top: 15px;
-    margin-left: 10px;
-    cursor: pointer;
-    
+
+body{
+  background: #00c9ff; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #00c9ff, #92fe9d); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #00c9ff, #92fe9d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: sans-serif;
 }
 
-.icons:focus,.icons:hover{
-    transform: scale(1.2,1.2);
-
+.result{
+    text-align: center;
+    font-weight: bold;
+}
+#result{
+    visibility: hidden;
+    color: white;
+    font-size: 2.5rem;
 }
 
-#btn{
-display: block;
-margin: 0 auto;
-visibility: hidden;
-margin-bottom: 2%;
-border-radius: 8px;
-color: white;
-opacity: 0.9;
-background-color:hsl(0, 100%, 0%);
-outline: none;
-border:0.8px solid white;
-width: 120px;
-height: 50px;
-cursor: pointer;
-font-size: 20px;
-
-}
-#btn:hover,#btn:focus{
-    transform: scale(1.03,1.03);
-
-}
-
-#options{
-    margin: 2%;
-   text-align: center;
-}
 .players{
     color: white;
     font-size: 150%;
@@ -78,15 +49,50 @@ font-size: 20px;
     border-radius: 15px;
     border: 2px solid black;
 }
-.result{
-    text-align: center;
-    font-weight: bold;
+
+#options{
+    margin: 2%;
+   text-align: center;
 }
-#result{
+
+#btn{
+    display: block;
+    margin: 0 auto;
     visibility: hidden;
+    margin-bottom: 2%;
+    border-radius: 8px;
     color: white;
-    font-size: 2.5rem;
+    opacity: 0.9;
+    background-color:hsl(0, 100%, 0%);
+    outline: none;
+    border:0.8px solid white;
+    width: 120px;
+    height: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    
+    }
+
+ #btn:hover,#btn:focus{
+    transform: scale(1.03,1.03);
+    }
+
+.icons{
+    display: inline-block;
+    width:120px;
+    height: 120px;
+    border-radius: 20px;
+    margin-top: 15px;
+    margin-left: 10px;
+    cursor: pointer;
+    
 }
+
+.icons:focus,.icons:hover{
+    transform: scale(1.2,1.2);
+
+}
+
 
 footer{
     display: flex;

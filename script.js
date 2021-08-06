@@ -1,16 +1,6 @@
 let computer_score=0;
 let player_score=0;
 
-var btns=document.getElementsByClassName("icons");
-for(let i=0;i<btns.length;i++)
-{
-    btns[i].addEventListener("click",(e) => {
-        if(computer_score!=5 && player_score!=5)
-        {
-            playgame(e.target.id);
-        }
-    })
-}
 
 function playgame(player)
 {
@@ -96,6 +86,22 @@ function get_result(player,computer)
     }
 }
 
+
+
+////////////// rock papaer scissors buttons click event //////////
+var btns=document.getElementsByClassName("icons");
+for(let i=0;i<btns.length;i++)
+{
+    btns[i].addEventListener("click",(e) => {
+        if(computer_score!=5 && player_score!=5)
+        {
+            playgame(e.target.id);
+        }
+    })
+}
+
+
+
 function updateScore()
 {
     let p1=document.getElementById("player-result");
@@ -125,6 +131,7 @@ function updateScore()
 
 }
 
+////////////// try again button click event /////////////
 document.getElementById("btn").addEventListener("click", (e) => {
     if(computer_score===5||player_score===5)
     {
