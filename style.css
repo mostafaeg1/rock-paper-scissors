@@ -78,10 +78,10 @@ font-size: 0.9em;
     background-color:hsl(0, 100%, 0%);
     outline: none;
     border:0.8px solid white;
-    width: 120px;
-    height: 45px;
+    width: 110px;
+    height: 42px;
     cursor: pointer;
-    font-size: 18px;
+    font-size: 17px;
     
     }
 
@@ -94,7 +94,8 @@ font-size: 0.9em;
     width:80px;
     height: 80px;
     border-radius: 20px;
-    margin-top: 15px;
+    margin-top: 12px;
+    margin-bottom: 5px;
     margin-left: 10px;
     cursor: pointer;
     
@@ -113,6 +114,8 @@ footer{
     gap: 10px;
     width: 100%;
     font-size: 20px;
+    position: fixed;
+    bottom: 0;
   }
   
  #github{
@@ -125,44 +128,62 @@ footer{
     }
 
 
-@media (min-width:496px) and (max-width: 588px) {
+@media (max-width: 600px) {
   
     header{
         font-size: 150%;;
     }
-    #result{
-        font-size: 2.5rem;
+    #btn{
+        margin-bottom: 20px;
+        margin-top: 30px;
     }
-  }
+   }
 
   @media (max-width: 494px) {
   
     header{
-        font-size: 105%;;
+        font-size: 130%;
+        margin-bottom: 5px;
     }
     #result{
-        font-size: 180%;
+        font-size: 2.4em;
     }
     #player-icon,#computer-icon{
-        width:100px;
-        height: 100px;
+        width:98px;
+        height: 98px;
     }
     .icons{
-        width:90px;
-        height: 90px;
-        
+        width:85px;
+        height: 85px; 
     }
-    #btn{
-        margin-top: 5%;
-        margin-bottom: 3%;
-        width: 110px;
-        height: 50px;
-        font-size: 18px;
-    }
+   
     #computer-section{
         margin-left: 4%;
     }
     #player-section{
         margin-right: 4%;
+    }
+    
+  }
+
+  @media (max-width: 336px) {
+    header{
+        font-size: 130%;
+        margin-bottom: 2px;
+    }
+    #result{
+        font-size: 2.2em;
+    }
+    #player-icon,#computer-icon{
+        width:90px;
+        height: 90px;
+    }
+    .icons{
+        width:80px;
+        height: 80px; 
+    }  
+    #btn{
+        margin-bottom: 2px;
+        margin-top: 3px;
     }
   }
